@@ -1,0 +1,202 @@
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color: #fff;
+    --background: rgb(26, 26, 26);
+    --background-secundary: rgb(20, 20, 20);
+    --color-secundary: rgba(212, 175, 55, 0.8);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(26, 26, 26) !important;
+    color: var(--font-color) !important;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+    font-family: "Bebas Neue", sans-serif !important;
+}
+
+header {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../assets/pexels-thgusstavo-1813272.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    margin: 130px 0;
+}
+
+.buttonUp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.buttonUp:hover{
+    transform: translateY(-10px);
+}
+
+.buttonUp i{
+    font-size: 40px;
+    color: #fff;
+    background-color: var(--color-secundary);
+
+}
+
+.buttonUp i:hover{
+    transform: translateY(-15px);
+}
+
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h2 {
+    font-size: 4rem !important;
+    max-width: 700px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Sobre nosotros */
+
+.txt-anos {
+    background-color: var(--background-secundary);
+    position: relative;
+    width: 300px;
+    z-index: 10;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: -350px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.695);
+}
+
+.txt-anos h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--color-secundary);
+}
+
+.title-sobre {
+    color: var(--color-secundary);
+}
+
+/* Servicios */
+
+.title {
+    color: var(--color-secundary);
+    text-align: center;
+
+}
+
+.box-sevicios {
+    background-color: var(--background-secundary) !important;
+    padding: 40px !important;
+    width: 350px !important;
+    margin: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+
+}
+
+.box-sevicios h2 {
+    color: var(--color-secundary);
+}
+
+/* Precios */
+
+.backDark {
+    background-color: var(--background-secundary);
+}
+
+/* Nuestro barbero */
+
+.cardBarber {
+    background-color: var(--background-secundary);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-B {
+    cursor: pointer;
+
+    transition: all 0.6s ease;
+}
+
+.card-B img {
+    filter: grayscale(1);
+    transition: all 0.6s ease !important;
+}
+
+.card-B img:hover {
+    filter: grayscale(0);
+}
+
+.card-B:hover {
+    transform: translateY(-10px);
+}
+
+/* Carousel */
+
+
+.carousel-inner{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* footer */
+
+footer{
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(../assets/pexels-rdne-7697208.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Media */
+
+@media (max-width: 768px){
+
+    .txt-anos0,  .txt-anos{
+        display: none;
+    }
+    .imgSobre{
+        width: 700px!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30%;
+    }
+
+    .flexNav{
+        display: block;
+        justify-content: start;
+    }
+    
+}
